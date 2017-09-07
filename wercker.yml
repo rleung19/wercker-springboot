@@ -26,7 +26,7 @@ deploy-accs:
         application_name: springboot-accs-demo
         application_type: java
         file: springbootdemo-0.0.1.zip
-occs-manage-container:
+restart-occs:
   steps:
     # Manage Oracle Container Cloud Service container
     - peternagy/oracle-occs-container-util:
@@ -35,5 +35,3 @@ occs-manage-container:
         rest_server_url: $OCCS_REST_SERVER_URL
         function: stop
         deployment_name: wercker-springboot-1
-
-     
