@@ -30,8 +30,8 @@ restart-occs:
   steps:
     # Manage Oracle Container Cloud Service container
     - peternagy/oracle-occs-container-util:
-        occs_user: $OCCS_USERNAME
+        occs_user: $OCCS_USER
         occs_password: $OCCS_PASSWORD
-        rest_server_url: $OCCS_REST_SERVER_URL
-        function: stop
-        deployment_name: wercker-springboot-1
+        rest_server_url: $REST_SERVER_URL
+        function: $FUNCTION
+        deployment_name: $DEPLOYMENT_NAME
